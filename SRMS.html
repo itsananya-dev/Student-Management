@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record Management</title>
+  <link rel="stylesheet" href="SRMS.css">
+</head>
+<body>
+  <h1>Student Record Management System</h1>
+
+  <div class="form">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="Registration" placeholder="Enter Registration Number">
+    <input type="number" id="marks" placeholder="Enter Obtained Marks">
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search by Name or Reg. No" onkeyup="searchStudent()">
+  </div>
+
+  <h2>Student List</h2>
+  <div id="studentList"></div>
+
+  <button onclick="clearAll()" style="margin-top:15px; background:red;">Clear All</button>
+
+  <script src="SRMS.js"></script>
+</body>
+</html>
